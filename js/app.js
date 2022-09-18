@@ -44,7 +44,7 @@ function f_c_data(data) {
 
     //button
     document.getElementsByClassName('gallery')[i].addEventListener("click",function(){
-    let apiCall = "https://api.openweathermap.org/data/2.5/weather?q="+data[i].capital+"&appid=d74ec0ddc35a388cf3575ae2a467504c";
+    let apiCall = "https://api.openweathermap.org/data/2.5/weather?q="+data[i].capital+"&units=metric&appid=d74ec0ddc35a388cf3575ae2a467504c";
     let weatherData = (apiCall) => {
         fetch(apiCall,{
             method : "GET"
